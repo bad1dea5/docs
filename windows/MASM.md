@@ -2,10 +2,13 @@
 
 ### struct
 ```assembly
-IO_STATUS_BLOCK struct
-	Pointer     QWORD ?
+IO_STATUS_BLOCK struct QWORD
+	UNION u
+		Status DWORD ?
+		Pointer QWORD ?
+	ENDS
 	Information QWORD ?
-IO_STATUS_BLOCK ENDS
+IO_STATUS_BLOCK ends
 
 LOCAL io: IO_STATUS_BLOCK
 
