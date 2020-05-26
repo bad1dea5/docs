@@ -1,5 +1,4 @@
-# docs
-Documentation
+# Documentation
 
 1. Linux
   - [Default linker script](https://github.com/bad1dea5/docs/blob/master/linux/default-linker-script.md)
@@ -12,3 +11,6 @@ Documentation
   - [Handles](https://github.com/bad1dea5/docs/blob/master/windows/handles.md)
   - [MASM](https://github.com/bad1dea5/docs/blob/master/windows/MASM.md)
   - [NtCreateFile](https://github.com/bad1dea5/docs/blob/master/windows/NtCreateFile.md)
+  
+3. AARCH64
+  - [Registers](https://github.com/bad1dea5/docs/blob/master/aarch64/registers.md)
