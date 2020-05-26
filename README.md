@@ -14,3 +14,4 @@
   
 3. ### AARCH64
   - [Registers](https://github.com/bad1dea5/docs/blob/master/aarch64/registers.md)
+  - [_start](https://github.com/bad1dea5/docs/blob/master/aarch64/_start.md)
