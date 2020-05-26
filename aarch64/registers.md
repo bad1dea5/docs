@@ -16,6 +16,22 @@ Register | Special | Role
 `r29` | FP | Frame pointer
 `r30` | LR | Link register
 `sp` | | Stack pointer
+`pc` | | Program counter; incremented by four bytes
+
+> In Arch64 state, the PC is not a general purpose register and you cannot access it explicitly.
+> The following types of instructions read it implicitly:
+>
+>    - Instructions that compute a PC-relative address.
+>    - PC-relative literal loads.
+>    - Direct branches to a PC-relative label.
+>    - Branch and link instructions, which store it in the procedure link register.
+>
+> The only types of instructions that can write to the PC are:
+>
+>    - Conditional and unconditional branches.
+>    - Exception generation and exception returns.
+>
+> Branch instructions load the destination address into the PC. 
 
 ### Reference
 [https://sourceware.org/binutils/docs/as/](https://sourceware.org/binutils/docs/as/)
