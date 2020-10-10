@@ -8,6 +8,7 @@
   - [_start](https://github.com/bad1dea5/docs/blob/master/linux/_start.md)
   
 2. ### Windows
+  - [Bare PE 64](https://github.com/bad1dea5/docs/blob/master/windows/PE.asm)
   - [Calling Convention](https://github.com/bad1dea5/docs/blob/master/windows/calling-convention.md)
   - [Handles](https://github.com/bad1dea5/docs/blob/master/windows/handles.md)
   - [MASM](https://github.com/bad1dea5/docs/blob/master/windows/MASM.md)
