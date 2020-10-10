@@ -18,11 +18,11 @@ The four functions [dlopen(), dlsym(), dlclose(), dlerror()](https://linux.die.n
 ```c
 typedef struct
 {
-  Elf64_Sxwordd_tag;
+  Elf64_Sxwordd_tag;  // uint64_t
   union
   {
-    Elf64_Xwordd_val;
-    Elf64_Addrd_ptr;
+    Elf64_Xwordd_val; // uint64_t
+    Elf64_Addrd_ptr;  // uint64_t
   } d_un;
 }
 Elf64_Dyn;
@@ -143,7 +143,7 @@ Elf64_Dyn* dyn = reinterpret_cast<Elf64_Dyn*>(_DYNAMIC);
 Debug* dbg = nullptr;
 LinkMap* map = nullptr;
 
-while(dyn)
+while(dyn->d_tag)
 {
   if (dyn->d_tag == DT_DEBUG)
   {
@@ -154,12 +154,13 @@ while(dyn)
     
     while(map)
     {
-      if(!strcmp(map->l_name, "libc.so.6"))
-        break;
+      if(strcmp(map->l_name, "libc.so.6"))
+        return map->l_addr;
         
       map = map->l_next;
     }
   }
+  dyn++;
 }
 
 void* handle = map->l_addr;
