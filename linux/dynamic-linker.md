@@ -173,7 +173,7 @@ Now that we have the handle, we can start getting headers, sections and symbols.
 ```cpp
 Elf64_Ehdr* ehdr = reinterpret_cast<Elf64_Ehdr*>(handle);
 Elf64_Phdr* phdr = reinterpret_cast<Elf64_Phdr*>(handle + ehdr->e_phoff);
-Elf64_Shdr* phdr = reinterpret_cast<Elf64_Shdr*>(handle + ehdr->e_shoff);
+Elf64_Shdr* shdr = reinterpret_cast<Elf64_Shdr*>(handle + ehdr->e_shoff);
 ```
 
 Although I could get the section header, iterate over it, and see it in memory, it would error with `segmentation fault` 
