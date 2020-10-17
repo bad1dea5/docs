@@ -11,6 +11,7 @@
   - [Bare PE 64](https://github.com/bad1dea5/docs/blob/master/windows/PE.asm)
   - [Calling Convention](https://github.com/bad1dea5/docs/blob/master/windows/calling-convention.md)
   - [Handles](https://github.com/bad1dea5/docs/blob/master/windows/handles.md)
+  - [LoadLibrary](https://github.com/bad1dea5/docs/blob/master/windows/loadlibrary.md)
   - [MASM](https://github.com/bad1dea5/docs/blob/master/windows/MASM.md)
   - [NtCreateFile](https://github.com/bad1dea5/docs/blob/master/windows/NtCreateFile.md)
   
