@@ -2,6 +2,7 @@
 
 1. ### Linux
   - [Bare ELF 64](https://github.com/bad1dea5/docs/blob/master/linux/elf.asm)
+  - [Calling Convention](https://github.com/bad1dea5/docs/blob/master/linux/calling-convention.md)
   - [Default linker script](https://github.com/bad1dea5/docs/blob/master/linux/default-linker-script.md)
   - [Dynamic linker](https://github.com/bad1dea5/docs/blob/master/linux/dynamic-linker.md)
   - [NASM](https://github.com/bad1dea5/docs/blob/master/linux/nasm.md)
