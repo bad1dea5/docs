@@ -15,3 +15,12 @@ LOCAL io: IO_STATUS_BLOCK
 mov io.Pointer, 0
 mov io.Information, 0
 ```
+### Macro
+```assembly
+name macro var
+	push var
+endm
+
+name 10
+name rax
+```
