@@ -17,3 +17,13 @@ mov rax, buffer   ; content
 ```E9	; jmp rel32``` **Near jump**	- [5 bytes] A jump to an instruction within the current code segment (the segment currently pointed to by the CS register).
 
 ```jmp near ptr label``` for near jump.
+
+### shr
+
+```assembly
+0x000055555555563e 48 b9 ef cd ab 90 78 56 34 12    movabs  $0x1234567890abcdef,%rcx    ; mov rcx, 0x1234567890abcdef
+0x0000555555555648 48 c1 e9 20                      shr     $0x20,%rcx                  ; shr rcx, 32
+
+rcx = 0x1234567890abcde
+rcx = 0x12345678
+```
