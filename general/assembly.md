@@ -1,5 +1,14 @@
 # Assembly
 
+### Calling convention
+| | arg1 | arg2 | arg3 | arg4 | arg5 | arg6 | arg7+ |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+| Windows   | rcx | rdx | r8 | r8 | stack |   |   |
+| | | | | | |   |   |
+| Linux user | rdi | rsi | rdx | rcx | r8 | r9 | stack |
+| Linux kernel | rdi | rsi | rdx | r10 | r8 | r9 | stack |
+
+### lea
 ```assembly
 lea rax, buffer   ; pointer
 mov rax, buffer   ; content
