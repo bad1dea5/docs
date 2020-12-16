@@ -18,6 +18,7 @@
   - [LoadLibrary](https://github.com/bad1dea5/docs/blob/master/windows/loadlibrary.md)
   - [MASM](https://github.com/bad1dea5/docs/blob/master/windows/MASM.md)
   - [NtCreateFile](https://github.com/bad1dea5/docs/blob/master/windows/NtCreateFile.md)
+  - [start](https://github.com/bad1dea5/docs/blob/master/windows/start.md)
   
 4. ### AARCH64
   - [Registers](https://github.com/bad1dea5/docs/blob/master/aarch64/registers.md)
